@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------
 * Name:        pndaHdfs.js
 * Purpose:     The HDFS component on the home page.
-****
+**
 * Author:      PNDA Team
 * Created:     2016/04/01
 * History:     2016/04/01 - Initial commit
