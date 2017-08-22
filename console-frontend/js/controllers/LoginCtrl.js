@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------
 * Name:        LoginCtrl.js
 * Purpose:     Controller for the login panel.
-*
+***
 * Author:      PNDA Team
 * Created:     2016/04/01
 * History:     2016/04/01 - Initial commit
