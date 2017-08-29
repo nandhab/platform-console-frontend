@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------
 * Name:        socket.js
 * Purpose:     Service for receiving Socket.IO notifications.
-*
+* Testing
 * Author:      Brian Ford, http://www.html5rocks.com/en/profiles/#brianford
 * Article:     http://www.html5rocks.com/en/tutorials/frameworks/angular-websockets/
 * Source:      https://github.com/btford/angular-socket-io-im/blob/master/public/js/services.js
