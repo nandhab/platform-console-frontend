@@ -21,7 +21,7 @@ node {
         stage 'Deploy'
        
 
-        emailext attachLog: true, body: "Build succeeded (see ${env.BUILD_URL})", subject: "[JENKINS] ${env.JOB_NAME} succeeded", to: "${env.EMAIL_RECIPIENTS}"
+        emailext attachLog: true, body: "Build succeeded ", subject: "[JENKINS]  succeeded", to: "${env.EMAIL_RECIPIENTS}"
 
     }
     catch(error) {
