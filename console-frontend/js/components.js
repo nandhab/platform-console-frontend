@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------------------
 * Name:        components.js
 * Purpose:     Miscellaneous vars and functions used by other components.
-*
+*****
 * Author:      PNDA Team
 * Created:     2016/04/01
 * History:     2016/04/01 - Initial commit
