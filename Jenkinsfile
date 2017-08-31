@@ -16,7 +16,7 @@ node {
             checkout([$class: 'GitSCM', branches: [[name: "tags/${version}"]], extensions: [[$class: 'CleanCheckout']]])
         }
         
-        sh("./build.sh ${version}")
+        sh("./build.sh develop")
 
         stage 'Deploy'
        
