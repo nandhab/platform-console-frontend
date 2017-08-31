@@ -18,17 +18,15 @@ node {
         
         sh("./build.sh develop")
 
-        stage 'Deploy'
+	
+	stage 'Running playbook'
+	ansiblePlaybook(
+		playbook: '/home/abeeda_t/ansible-examples/lamp_simple/site.yml',
+		inventory: '/home/abeeda_t/ansible-examples/lamp_simple/hosts')
+		
+	stage 'Deploy'
        
         emailext attachLog: true, body: "Build succeeded (see ${env.BUILD_URL})", subject: "[JENKINS] ${env.JOB_NAME} succeeded", to: "${env.EMAIL_RECIPIENTS}"
-		
-	stage 'Running playbook'
-	wrap([$class: 'AnsiColorBuildWrapper', colorMapName: "xterm"]) {
-		ansiblePlaybook(
-			playbook: '/home/abeeda_t/ansible-examples/lamp_simple/site.yml',
-			inventory: '/home/abeeda_t/ansible-examples/lamp_simple/hosts',
-			colorized: true)
-	}
 	
     }
     catch(error) {
